@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.13)  13 APR 2017 15:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.13)  13 APR 2017 16:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -574,7 +574,8 @@ Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
 \AP@partial=\box40
 \AP@footins=\box41
 )) (./thesis.aux
-(./Chapters/ch2.aux)
+(./Chapters/ch1.aux) (./Chapters/ch2.aux) (./Chapters/ch3.aux)
+(./Chapters/ch4.aux)
 
 LaTeX Warning: Label `applastpage' multiply defined.
 
@@ -875,13 +876,18 @@ Overfull \hbox (3.99596pt too wide) in paragraph at lines 3--3
  [23] [24
 
 ]
+\openout2 = `Chapters/ch1.aux'.
+
+ (./Chapters/ch1.tex
 CHAPTER 1.
-[1
+) [1
+
 
 ]
 \openout2 = `Chapters/ch2.aux'.
 
  (./Chapters/ch2.tex [2
+
 
 
 ]
@@ -890,97 +896,103 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 17.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 17.
-) [3] [4
+) [3]
+\openout2 = `Chapters/ch3.aux'.
+
+ (./Chapters/ch3.tex [4
+
 
 
 ]
 CHAPTER 3.
-[5] [6
+) [5]
+\openout2 = `Chapters/ch4.aux'.
+
+ (./Chapters/ch4.tex [6
+
+
 
 ]
 CHAPTER 4.
-<./figs/roc_TREC.pdf, id=390, 530.98375pt x 403.5075pt>
+<./figs/roc_TREC.pdf, id=370, 530.98375pt x 403.5075pt>
 File: ./figs/roc_TREC.pdf Graphic file (type pdf)
 
 <use ./figs/roc_TREC.pdf>
-Package pdftex.def Info: ./figs/roc_TREC.pdf used on input line 125.
+Package pdftex.def Info: ./figs/roc_TREC.pdf used on input line 11.
 (pdftex.def)             Requested size: 412.56497pt x 313.52165pt.
- [7] [8pdfTeX warning (ext4): destination with the same identifier (name{figure
-.4.1}) has been already used, duplicate ignored
+) [7] [8pdfTeX warning (ext4): destination with the same identifier (name{figur
+e.4.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.154 \chapter
-              {Conclusion}pdfTeX warning (ext4): destination with the same iden
-tifier (name{table.4.1}) has been already used, duplicate ignored
+l.98 \include{Chapters/ch4}
+                           pdfTeX warning (ext4): destination with the same ide
+ntifier (name{table.4.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.154 \chapter
-              {Conclusion} <./figs/roc_TREC.pdf>]
-CHAPTER 5.
-(./thesis.bbl [9
-
-] [10
-
-]
+l.98 \include{Chapters/ch4}
+                            <./figs/roc_TREC.pdf>] (./thesis.bbl
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 14.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)) [11
+)) [9
 
-] [12
+
+
+] [10
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{chapter.1}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.165 \chapter{Do not use long titles.}
+l.107 \chapter{Do not use long titles.}
                                        
 \MakeUppercase {Appendix} A.
 Package hyperref Info: bookmark level for unknown appendix defaults to 0 on inp
-ut line 165.
-[13] [14
+ut line 107.
+[11] [12
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{chapter.2}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.167 \chapter{Pseudo-codes}
+l.109 \chapter{Pseudo-codes}
                             
 \MakeUppercase {Appendix} B.
-[15] [16
+[13] [14
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{chapter.3}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.169 \chapter{Time-series Results}
+l.111 \chapter{Time-series Results}
                                    
 \MakeUppercase {Appendix} C.
-[17]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 173.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 173.
- (./thesis.aux (./Chapters/ch2.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 173.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 173.
+[15]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 115.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 115.
+ (./thesis.aux (./Chapters/ch1.aux) (./Chapters/ch2.aux)
+(./Chapters/ch3.aux) (./Chapters/ch4.aux))
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 115.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 115.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: DC15DE4D1E8FADF3F78E5B9039121AD1;2200.
+(rerunfilecheck)             Checksum: B64D4AB8E87CB952BE41722BB850CD79;1958.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 173.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 115.
  ) 
 Here is how much of TeX's memory you used:
- 17137 strings out of 493029
- 318734 string characters out of 6136234
- 398823 words of memory out of 5000000
- 20231 multiletter control sequences out of 15000+600000
+ 17157 strings out of 493029
+ 319078 string characters out of 6136234
+ 400205 words of memory out of 5000000
+ 20236 multiletter control sequences out of 15000+600000
  22574 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,9n,56p,718b,387s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,9n,56p,741b,387s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -996,10 +1008,10 @@ e1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (49 pages, 121829 bytes).
+Output written on thesis.pdf (47 pages, 120798 bytes).
 PDF statistics:
- 506 PDF objects out of 1000 (max. 8388607)
- 439 compressed objects within 5 object streams
- 102 named destinations out of 1000 (max. 500000)
- 322 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 476 PDF objects out of 1000 (max. 8388607)
+ 411 compressed objects within 5 object streams
+ 96 named destinations out of 1000 (max. 500000)
+ 290 words of extra memory for PDF output out of 10000 (max. 10000000)
 

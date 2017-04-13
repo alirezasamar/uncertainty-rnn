@@ -37,12 +37,7 @@
 \contentsline {section}{\numberline {4.3}Results and Discussion}{7}{section.4.3}
 \contentsline {section}{\numberline {4.4}Chapter Summary}{7}{section.4.4}
 \addvspace {\@twolinespacing }
-\contentsline {chapter}{\numberline {5}\MakeUppercase {Conclusion}}{9}{chapter.5}
-\contentsline {section}{\numberline {5.1}Research Outcomes}{9}{section.5.1}
-\contentsline {section}{\numberline {5.2}Contributions to Knowledge}{9}{section.5.2}
-\contentsline {section}{\numberline {5.3}Future Works}{9}{section.5.3}
-\addvspace {\@twolinespacing }
-\contentsline {chapter}{\hspace {-\toc@sep@chap }\normalsize \MakeUppercase {REFERENCES} \normalfont }{11}{section*.16}
+\contentsline {chapter}{\hspace {-\toc@sep@chap }\normalsize \MakeUppercase {REFERENCES} \normalfont }{9}{section*.16}
 \save@tocdepth \setcounter {tocdepth}{0}
 \save@tocdepth \setcounter {tocdepth}{0}
 \vspace {\@twolinespacing }
