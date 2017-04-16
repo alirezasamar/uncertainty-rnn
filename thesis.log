@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.13)  13 APR 2017 16:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.13)  16 APR 2017 20:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -880,23 +880,30 @@ Overfull \hbox (3.99596pt too wide) in paragraph at lines 3--3
 
  (./Chapters/ch1.tex
 CHAPTER 1.
+
+LaTeX Warning: Citation `b2' on page 1 undefined on input line 4.
+
+
+LaTeX Warning: Citation `okamoto2004improved' on page 1 undefined on input line
+ 4.
+
 ) [1
 
 
-]
+] [2]
 \openout2 = `Chapters/ch2.aux'.
 
- (./Chapters/ch2.tex [2
-
-
-
-]
+ (./Chapters/ch2.tex
 CHAPTER 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 17.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 17.
-) [3]
+) [3
+
+
+
+]
 \openout2 = `Chapters/ch3.aux'.
 
  (./Chapters/ch3.tex [4
@@ -914,7 +921,7 @@ CHAPTER 3.
 
 ]
 CHAPTER 4.
-<./figs/roc_TREC.pdf, id=370, 530.98375pt x 403.5075pt>
+<./figs/roc_TREC.pdf, id=391, 530.98375pt x 403.5075pt>
 File: ./figs/roc_TREC.pdf Graphic file (type pdf)
 
 <use ./figs/roc_TREC.pdf>
@@ -933,11 +940,10 @@ ntifier (name{table.4.1}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.98 \include{Chapters/ch4}
                             <./figs/roc_TREC.pdf>] (./thesis.bbl
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 14.
 
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)) [9
+LaTeX Warning: Empty `thebibliography' environment on input line 9.
+
+) [9
 
 
 
@@ -978,7 +984,10 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 115.
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 115.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 115.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: B64D4AB8E87CB952BE41722BB850CD79;1958.
+(rerunfilecheck)             Checksum: 3AF0F11F277F1979CCDF8703C4C73A55;2335.
+
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -986,13 +995,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 115.
  ) 
 Here is how much of TeX's memory you used:
- 17157 strings out of 493029
- 319078 string characters out of 6136234
- 400205 words of memory out of 5000000
- 20236 multiletter control sequences out of 15000+600000
- 22574 words of font info for 45 fonts, out of 8000000 for 9000
+ 17126 strings out of 493029
+ 318662 string characters out of 6136234
+ 400146 words of memory out of 5000000
+ 20208 multiletter control sequences out of 15000+600000
+ 20375 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,9n,56p,741b,387s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,9n,56p,741b,394s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1004,14 +1013,13 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
-/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (47 pages, 120798 bytes).
+/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on thesis.pdf (47 pages, 110938 bytes).
 PDF statistics:
- 476 PDF objects out of 1000 (max. 8388607)
- 411 compressed objects within 5 object streams
- 96 named destinations out of 1000 (max. 500000)
- 290 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 492 PDF objects out of 1000 (max. 8388607)
+ 428 compressed objects within 5 object streams
+ 99 named destinations out of 1000 (max. 500000)
+ 330 words of extra memory for PDF output out of 10000 (max. 10000000)
 

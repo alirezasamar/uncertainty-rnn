@@ -1,24 +1,9 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
   \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
   \urlstyle{rm}\Url}\fi
-
-\bibitem{b2}
-Oetiker, T., Partl, H., Hyna, I. and Schlegl, E.
-\newblock \emph{The Not So Short Introduction to \LaTeX 2$\varepsilon$}.
-\newblock 2013.
-\newblock
-  \urlprefix\url{http://ctan.tug.org/tex-archive/info/lshort/english/lshort.pdf}.
-
-\bibitem{okamoto2004improved}
-Okamoto, Y., Ando, Y., Hataya, K., Nakayama, T., Miyamoto, H., Inoue, T.,
-  Senda, M., Hirata, K., Kosaki, M., Shibata, N. \emph{et~al.}
-\newblock Improved power performance for a recessed-gate AlGaN-GaN
-  heterojunction FET with a field-modulating plate.
-\newblock \emph{Microwave Theory and Techniques, IEEE Transactions on}, 2004.
-  52(11): 2536--2540.
 
 \end{thebibliography}
