@@ -7,13 +7,22 @@ The Bayesian approach to machine learning is based on using probability to repre
 
 Understanding whether the chosen model is the right one or not, or the data has enough signals or not is an active field of research \cite{Ghahramani2015} in \textit{Bayesian machine learning}, especially in \textit{deep learning models} where based on predictions result it's difficult to make sure about the certainty level of predictions.  
 
-\subsection{Recurrent Neural Networks}
+\section{Introduction: A Fundamental Problem}
+
+
+
+
+\section{Problem Background}
 
 Recurrent Neural Networks (RNNs) achieve state-of-the-art performance on a wide range of sequence prediction tasks (\cite{Wu2016}; \cite{Amodei2015}; \cite{Jozefowicz2016}; \cite{Zaremba2014}; \cite{Lu2016}).
 In this work we shall examine how to add uncertainty and regularisation to RNNs by means of applying Bayesian methods to training.
 Bayesian methods give RNNs another way to express their uncertainty (via the parameters).
 At the same time, by using a prior to integrate out the parameters to average across many models during training, this gives a regularisation effect to the network.
 Recent approaches either attempt to justify dropout \cite{Srivastava2014} and weight decay as a variational inference scheme \cite{Gal2015}, or apply Stochastic Gradient Langevin dynamics \cite{Welling2011} to truncated backpropagation in time directly \cite{Gan2016}.
+
+%\subsection{Applications of Model Uncertainty}
+
+\section{Problem Statement}
 
 Interestingly, recent work has not explored further directly apply a variational Bayes inference scheme for RNNs as was done in practical.
 We derive a straightforward approach based upon Bayes by Backprop \cite{Blundell2015a} that we show works well on large scale problems.
@@ -27,15 +36,14 @@ This sharpening adapts the variational posterior to a batch of data using gradie
 This can be viewed as a hierarchical distribution, where a local batch gradient is used to adapt a global posterior, forming a local approximation for each batch.
 This gives a more flexible form  to the typical assumption of Gaussian posterior when variational inference is applied to neural networks, which reduces variance. This technique can be applied more widely across other variational Bayes models.
 
-\subsection{Model Confidence}
-\subsection{Model Uncertainty and Safety}
-
-\section{Problem Background}
-\subsection{Applications of Model Uncertainty}
-
-\section{Problem Statement}
-
 \section{Project Aim}
+
+The contributions of our work are as follows:
+\begin{itemize}
+	\item Demonstrate how Bayes by Backprop (BBB) can be efficiently applied to RNNs.
+	\item Develop a novel technique which reduces the variance of BBB.
+	\item Improve the performance on two widely studied benchmarks with established regularisation technique such as dropout by a big margin.
+\end{itemize}
 
 \section{Project Questions}
 
