@@ -1,9 +1,105 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{10}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
   \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
   \urlstyle{rm}\Url}\fi
+
+\bibitem{Ghahramani2015}
+Ghahramani, Z.
+\newblock {Probabilistic machine learning and artificial intelligence}.
+\newblock \emph{Nature}, 2015. 521(7553): 452--459.
+\newblock ISSN 0028-0836.
+\newblock \urlprefix\url{http://dx.doi.org/10.1038/nature14541
+  http://10.0.4.14/nature14541}.
+
+\bibitem{Wu2016}
+Wu, Y., Schuster, M., Chen, Z., Le, Q.~V., Norouzi, M., Macherey, W., Krikun,
+  M., Cao, Y., Gao, Q., Macherey, K., Klingner, J., Shah, A., Johnson, M., Liu,
+  X., Kaiser, {\L}., Gouws, S., Kato, Y., Kudo, T., Kazawa, H., Stevens, K.,
+  Kurian, G., Patil, N., Wang, W., Young, C., Smith, J., Riesa, J., Rudnick,
+  A., Vinyals, O., Corrado, G., Hughes, M. and Dean, J.
+\newblock {Google's Neural Machine Translation System: Bridging the Gap between
+  Human and Machine Translation}.
+\newblock \emph{ArXiv e-prints}, 2016: 1--23.
+\newblock \urlprefix\url{http://arxiv.org/abs/1609.08144}.
+
+\bibitem{Amodei2015}
+Amodei, D., Anubhai, R., Battenberg, E., Carl, C., Casper, J., Catanzaro, B.,
+  Chen, J., Chrzanowski, M., Coates, A., Diamos, G., Elsen, E., Engel, J., Fan,
+  L., Fougner, C., Han, T., Hannun, A., Jun, B., LeGresley, P., Lin, L.,
+  Narang, S., Ng, A., Ozair, S., Prenger, R., Raiman, J., Satheesh, S.,
+  Seetapun, D., Sengupta, S., Wang, Y., Wang, Z., Wang, C., Xiao, B., Yogatama,
+  D., Zhan, J. and Zhu, Z.
+\newblock {Deep-speech 2: End-to-end speech recognition in English and
+  Mandarin}.
+\newblock \emph{Jmlr W{\&}Cp}, 2015. 48: 28.
+\newblock ISSN 10987576.
+\newblock \doi{10.1145/1143844.1143891}.
+
+\bibitem{Jozefowicz2016}
+Jozefowicz, R., Vinyals, O., Schuster, M., Shazeer, N. and Wu, Y.
+\newblock {Exploring the Limits of Language Modeling}.
+\newblock \emph{arXiv:1602.02410 [cs]}, 2016.
+\newblock
+  \urlprefix\url{http://arxiv.org/abs/1602.02410{\%}5Cnhttp://www.arxiv.org/pdf/1602.02410.pdf}.
+
+\bibitem{Zaremba2014}
+Zaremba, W., Sutskever, I. and Vinyals, O.
+\newblock {Recurrent Neural Network Regularization}.
+\newblock \emph{Iclr}, 2014. (2013): 1--8.
+\newblock ISSN 0157244X.
+\newblock \doi{ng}.
+\newblock \urlprefix\url{http://arxiv.org/abs/1409.2329}.
+
+\bibitem{Lu2016}
+Lu, J., Xiong, C., Parikh, D. and Socher, R.
+\newblock {Knowing When to Look: Adaptive Attention via A Visual Sentinel for
+  Image Captioning}.
+\newblock \emph{1612.01887V1}, 2016.
+\newblock \urlprefix\url{http://arxiv.org/abs/1612.01887}.
+
+\bibitem{Srivastava2014}
+Srivastava, N., Hinton, G., Krizhevsky, A., Sutskever, I. and Salakhutdinov, R.
+\newblock {Dropout: A Simple Way to Prevent Neural Networks from Overfitting}.
+\newblock \emph{Journal of Machine Learning Research}, 2014. 15: 1929--1958.
+\newblock ISSN 15337928.
+\newblock \doi{10.1214/12-AOS1000}.
+
+\bibitem{Gal2015}
+Gal, Y. and Ghahramani, Z.
+\newblock {Dropout as a Bayesian Approximation : Representing Model Uncertainty
+  in Deep Learning}.
+\newblock \emph{Icml}, 2015. 48: 1--10.
+
+\bibitem{Welling2011}
+Welling, M. and Teh, Y.-W.
+\newblock {Bayesian Learning via Stochastic Gradient Langevin Dynamics}.
+\newblock \emph{Proceedings of the 28th International Conference on Machine
+  Learning}, 2011: 681--688.
+
+\bibitem{Gan2016}
+Gan, Z., Li, C., Chen, C., Pu, Y., Su, Q. and Carin, L.
+\newblock {Scalable Bayesian Learning of Recurrent Neural Networks for Language
+  Modeling}.
+\newblock \emph{arXiv preprint}, 2016.
+
+\bibitem{Blundell2015a}
+Blundell, C., Cornebise, J., Kavukcuoglu, K. and Wierstra, D.
+\newblock {Weight Uncertainty in Neural Networks}.
+\newblock \emph{Icml}, 2015. 37: 1613--1622.
+\newblock
+  \urlprefix\url{http://arxiv.org/abs/1505.05424{\%}5Cnhttp://www.arxiv.org/pdf/1505.05424.pdf}.
+
+\bibitem{Hinton1993}
+Hinton, G.~E., Hinton, G.~E., van Camp, D. and van Camp, D.
+\newblock {Keeping the neural networks simple by minimizing the description
+  length of the weights}.
+\newblock \emph{Proceedings of the sixth annual conference on Computational
+  learning theory - COLT '93}, 1993: 5--13.
+\newblock \doi{10.1145/168304.168306}.
+\newblock
+  \urlprefix\url{http://portal.acm.org/citation.cfm?doid=168304.168306}.
 
 \end{thebibliography}

@@ -38,46 +38,42 @@
 % \watermarkpage
 
 % Mandatory pages
-\coverpage
-\superpage
-\certification
-\frontmatter
+%\coverpage
+%\superpage
+%\certification
+%\frontmatter
 \maketitle
-\declaration
+%\declaration
 
+%\begin{dedication}
+%Dedication\
+%\end{dedication}
 
-\begin{dedication}
-Dedication\
-\end{dedication}
-
-
-\begin{acknowledgement}
-Acknowledgement
-\end{acknowledgement}
-
+%\begin{acknowledgement}
+%Acknowledgement
+%\end{acknowledgement}
 
 \begin{abstract}
-This is the English abstract
+Deep learning has outperformed in various fields from computer vision, and language processing to physics, biology, and manufacturing. This means the deep or multi-layer architecture of neural networks are being extensively used in these fields; for instance convolutional neural networks (CNN) as image processing tools, and recurrent neural networks (RNN) as sequence processing model.
+
+However, in traditional sciences fields such as physics and biology, model uncertainty is crucial, especially in time series models where delay can’t be tolerated. In this work, I aim to propose a novel theoretical framework and develop tools to measure uncertainty estimates, especially in deep recurrent neural networks.
+
+This work also tackles a widely known difficulty of training recurrent neural networks, vanishing gradient by proposing a novel architecture of RNN that compute weighted average unit on past iteration.
+
 \end{abstract}
 
-
-\begin{abstrak}
-Ini adalah abstrak Bahasa Melayu
-\end{abstrak}
-
+%\begin{abstrak}
+%Ini adalah abstrak Bahasa Melayu
+%\end{abstrak}
 
 \tableofcontents
 \listoftables
 \listoffigures
 
-
 %List of abbreviation 
 \listofabbre
 \addabbre{ANN}{Artificial Neural Network}
-\addabbre{PC}{Personal Computer}
-\addabbre{SVM}{Support Vector Machine}
-\addabbre{XML}{Extensible Markup Language}
-
+\addabbre{RNN}{Recurrent Neural Network}
 
 %List of symbols 
 \listofsymbols
@@ -85,9 +81,8 @@ Ini adalah abstrak Bahasa Melayu
 \addsymbol{$\sigma$}{Whatever}
 \addsymbol{$\varepsilon$}{Whatever}
 
-
-%Uncomment if have appendices
-\listofappendices
+%List of appendices
+%\listofappendices
 
 \onehalfspacing
 \mainmatter
@@ -102,14 +97,11 @@ Ini adalah abstrak Bahasa Melayu
 \bibliographystyle{utmthesis-numbering}
 \bibliography{reference}
 
-
-\appendix
-\chapter{Do not use long titles.}
-
-\chapter{Pseudo-codes}
-
-\chapter{Time-series Results}
+%\appendix
+%\chapter{Do not use long titles.}
+%\chapter{Pseudo-codes}
+%\chapter{Time-series Results}
 
 %This is required to make List of Appendices possible. Remove when have no appendix.
-\endmatter
+%\endmatter
 \end{document}

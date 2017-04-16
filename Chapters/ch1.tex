@@ -1,8 +1,32 @@
 \chapter{Introduction}
 \label{chap:intro}
-\section{Introduction: }
-Introduction to the thesis \cite{b2} to the thesis \cite{okamoto2004improved}. This section attempts to give a brief introduction to quantum computing. Before entering the microscopic world of quantum computing, we revisit the present digital system commonly used by the masses.  The current digital system is based on binary digits, commonly known as bits.  Each bit is represented with a binary value called ``logic 0'' or ``logic 1'' and the number of distinct states is $2^n$, where $n$ is the number of bits.  Physically, these logic values are typically represented by two different voltage levels. In this thesis, such computers are referred to as a \emph{classical computer}.
-\subsection{Recurrent Neural Network}
+
+\section{Introduction: The Importance of Uncertainty}
+
+The Bayesian approach to machine learning is based on using probability to represent all forms of uncertainty. There are different models like the Gaussian process to understand possible likely and less likely options to generalize the observed data by defining the probability of distributions over functions. This observation and probabilistic models provides the confidence bounds for understanding data and making the decision based on analysis. For instance, an autonomous vehicle would use the determination from confidence bounds to whether brake or not. The confidence bounds simply means \textbf{\textit{how certain the model is about its output?}}
+
+Understanding whether the chosen model is the right one or not, or the data has enough signals or not is an active field of research \cite{Ghahramani2015} in \textit{Bayesian machine learning}, especially in \textit{deep learning models} where based on predictions result it's difficult to make sure about the certainty level of predictions.  
+
+\subsection{Recurrent Neural Networks}
+
+Recurrent Neural Networks (RNNs) achieve state-of-the-art performance on a wide range of sequence prediction tasks (\cite{Wu2016}; \cite{Amodei2015}; \cite{Jozefowicz2016}; \cite{Zaremba2014}; \cite{Lu2016}).
+In this work we shall examine how to add uncertainty and regularisation to RNNs by means of applying Bayesian methods to training.
+Bayesian methods give RNNs another way to express their uncertainty (via the parameters).
+At the same time, by using a prior to integrate out the parameters to average across many models during training, this gives a regularisation effect to the network.
+Recent approaches either attempt to justify dropout \cite{Srivastava2014} and weight decay as a variational inference scheme \cite{Gal2015}, or apply Stochastic Gradient Langevin dynamics \cite{Welling2011} to truncated backpropagation in time directly \cite{Gan2016}.
+
+Interestingly, recent work has not explored further directly apply a variational Bayes inference scheme for RNNs as was done in practical.
+We derive a straightforward approach based upon Bayes by Backprop \cite{Blundell2015a} that we show works well on large scale problems.
+Our approach is a simple alteration to truncated backpropagation through time that results in an estimate of the posterior distribution on the weights of the RNN.
+Applying Bayesian methods to successful deep learning models affords two advantages: explicit representations of uncertainty and regularisation.
+Our formulation explicitly leads to a cost function with an information theoretic justification by means of a bits-back argument \cite{Hinton1993} where a KL divergence acts as a regulariser.
+
+The form of the posterior in variational inference shapes the quality of the uncertainty estimates and hence the overall performance of the model.
+We shall show how performance of the RNN can be improved by means of adapting (``sharpening'') the posterior locally to a batch.
+This sharpening adapts the variational posterior to a batch of data using gradients based upon the batch.
+This can be viewed as a hierarchical distribution, where a local batch gradient is used to adapt a global posterior, forming a local approximation for each batch.
+This gives a more flexible form  to the typical assumption of Gaussian posterior when variational inference is applied to neural networks, which reduces variance. This technique can be applied more widely across other variational Bayes models.
+
 \subsection{Model Confidence}
 \subsection{Model Uncertainty and Safety}
 
