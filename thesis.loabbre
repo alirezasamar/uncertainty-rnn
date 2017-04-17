@@ -1,3 +1,5 @@
 \makeabbretable {ANN}{Artificial Neural Network}
 \makeabbretable {RNN}{Recurrent Neural Network}
 \makeabbretable {BBB}{Bayes by Backprop}
+\makeabbretable {CNN}{Convolutional Neural Network}
+\makeabbretable {KL}{Kullback-Leibler}

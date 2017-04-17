@@ -11,6 +11,8 @@
 \RequirePackage{acronym}
 \RequirePackage{emptypage}
 \RequirePackage{times}
+\RequirePackage{algorithm}
+\RequirePackage{algorithmic}
 % \RequirePackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black, pdfborder=false]{hyperref} %yap% [v4.1] commented out. 
 \RequirePackage[hidelinks]{hyperref} %yap% [v4.1] new method to hide links. does not produce hyperref error.
 \pdfstringdefDisableCommands{%
