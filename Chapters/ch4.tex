@@ -1,21 +1,22 @@
-\chapter{Proposed Work}
+\chapter{Analysis and Design}
 \label{chap:proposed.work}
 
-\section{Truncated Bayes by Backprop Through Time}
+\section{Adoption of Bayes by Backprop to RNNs}
 \label{sec:tbbbtt}
 
-Applying BBB to RNNs is depicted in Figure \ref{fig:lstmbbb} where the weight matrices of the RNN are drawn from a distribution (learnt by BBB).
+Applying Bayes by Backprop (BBB) to RNNs is illustrated in \textbf{Figure \ref{fig:lstmbbb}} where the weight matrices of the RNN are drawn from a distribution (learnt by BBB).
 However, this direct application raises two questions: when to sample the parameters of the RNN, and how to weight the contribution of the KL regulariser of \eqref{eq:klelbo}.
-We shall briefly justify the adaptation of BBB to RNNs, given in Algorithm~\ref{alg:rnnbbb} below.
+To address these concerns in the adaptation of BBB to RNNs, Algorithm \ref{alg:rnnbbb} given where:
 
 \begin{figure}
 	\centering
 	\includegraphics[width=\linewidth]{figs/LSTMBBB}
-	\caption{Demonstration of Bayes by Backprop (BBB) applied to an RNN.}
+	\caption{Adoption of Bayes by Backprop (BBB) to an RNN.}
 	\label{fig:lstmbbb}
 \end{figure}
 
 The variational free energy of \eqref{eq:klelbo} for an RNN on a sequence of length $T$ is:
+
 \begin{align}
 	\mathcal{L}(\theta) &=
 	- \mathbb{E}_{q(\theta)}\left[\log p(y_{1:T}|\theta, x_{1:T}) \right]
@@ -24,6 +25,7 @@ The variational free energy of \eqref{eq:klelbo} for an RNN on a sequence of len
 	+ \kl{q(\theta)}{p(\theta)},
 	\label{eq:rnnelbo}
 \end{align}
+
 where $p(y_{1:T}|\theta, x_{1:T})$ is the likelihood of a sequence produced when the states of an unrolled RNN $F_T$ are fed into an appropriate probability distribution.
 The parameters of the entire network are $\theta$.
 Although the RNN is unrolled $T$ times, each weight is penalised just once by the KL term, rather than $T$ times.

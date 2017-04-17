@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.13)  17 APR 2017 11:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.13)  17 APR 2017 12:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -999,8 +999,8 @@ l.45 	\item I
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.98 \include{Chapters/ch1}
-                            [3]
+l.100 \include{Chapters/ch1}
+                             [3]
 \openout2 = `Chapters/ch2.aux'.
 
  (./Chapters/ch2.texpdfTeX warning (ext4): destination with the same identifier
@@ -1014,14 +1014,14 @@ l.1 \chapter
 
 ]
 CHAPTER 2.
-<./figs/rnn-rolled.png, id=309, 165.4983pt x 256.91985pt>
+<./figs/rnn-rolled.png, id=288, 165.4983pt x 256.91985pt>
 File: ./figs/rnn-rolled.png Graphic file (type png)
 
 <use ./figs/rnn-rolled.png>
 Package pdftex.def Info: ./figs/rnn-rolled.png used on input line 12.
 (pdftex.def)             Requested size: 66.19814pt x 102.76611pt.
 
-<./figs/rnn-unrolled.png, id=313, 977.8131pt x 256.91985pt>
+<./figs/rnn-unrolled.png, id=292, 977.8131pt x 256.91985pt>
 File: ./figs/rnn-unrolled.png Graphic file (type png)
 
 <use ./figs/rnn-unrolled.png>
@@ -1233,58 +1233,155 @@ been already used, duplicate ignored
 l.71 
       [6]
 
-LaTeX Warning: Citation `Hochreiter1997' on page 7 undefined on input line 77.
+LaTeX Warning: Citation `Mikolov2010' on page 7 undefined on input line 83.
+
+
+LaTeX Warning: Citation `Li2016a' on page 7 undefined on input line 85.
+
+
+LaTeX Warning: Citation `Duchi2011' on page 7 undefined on input line 85.
+
+
+LaTeX Warning: Citation `Kingma2013a' on page 7 undefined on input line 85.
+
+! Undefined control sequence.
+l.88 \citet
+           {buntine1991bayesian} propose various maximum a posteriori scheme...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.90 \citet
+           {buntine1991bayesian} also suggest using second order derivatives...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `Hochreiter1995' on page 7 undefined on input line 92.
+
+
+LaTeX Warning: Citation `Mackay1995' on page 7 undefined on input line 93.
+
+! Undefined control sequence.
+l.94 \citet
+           {neal2012bayesian} investigated the use of hybrid Monte Carlo for...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.7}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.99 \end{align}
-                 [7])pdfTeX warning (ext4): destination with the same identifie
-r (name{page.8}) has been already used, duplicate ignored
+l.95 
+      [7]
+! Undefined control sequence.
+l.96 More recently \citet
+                         {graves2011practical} derived a variational inferen...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `Graves2016' on page 8 undefined on input line 98.
+
+
+LaTeX Warning: Citation `Wang2013' on page 8 undefined on input line 99.
+
+
+LaTeX Warning: Citation `Kingma2015' on page 8 undefined on input line 99.
+
+
+LaTeX Warning: Citation `Soudry2014' on page 8 undefined on input line 103.
+
+! Undefined control sequence.
+l.103 ...ion propagation algorithm, whereas \citet
+                                                  {hernandez2015probabilisti...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.104 \citet
+            {hasenclever2015distributed} derive a distributed expectation pr...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.105 ...d applying SGLD to neural networks \citep
+                                                  {li2015preconditioned} and...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 1688) in paragraph at lines 96--106
+\OT1/ptm/m/n/12 as-sumed den-sity fil-ter-ing (in com-bi-na-tion with early sto
+p-ping) at-tain-ing good
+ []
+
+)pdfTeX warning (ext4): destination with the same identifier (name{page.8}) has
+ been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.99 \include{Chapters/ch2}
-                            [8]pdfTeX warning (ext4): destination with the same
- identifier (name{page.9}) has been already used, duplicate ignored
+l.101 \include{Chapters/ch2}
+                             [8]pdfTeX warning (ext4): destination with the sam
+e identifier (name{page.9}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.99 \include{Chapters/ch2}
-                            [9]pdfTeX warning (ext4): destination with the same
- identifier (name{page.10}) has been already used, duplicate ignored
+l.101 \include{Chapters/ch2}
+                             [9]pdfTeX warning (ext4): destination with the sam
+e identifier (name{page.10}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.99 \include{Chapters/ch2}
-                            [10 <./figs/rnn-rolled.png> <./figs/rnn-unrolled.pn
-g>]
+l.101 \include{Chapters/ch2}
+                             [10 <./figs/rnn-rolled.png> <./figs/rnn-unrolled.p
+ng>]
 \openout2 = `Chapters/ch3.aux'.
 
  (./Chapters/ch3.tex
 CHAPTER 3.
-)pdfTeX warning (ext4): destination with the same identifier (name{page.11}) ha
-s been already used, duplicate ignored
+
+LaTeX Warning: Citation `Hochreiter1997' on page 11 undefined on input line 13.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.11}) has
+ been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.100 \include{Chapters/ch3}
-                             [11
+l.28 
+      [11
 
 
 
-]
+])pdfTeX warning (ext4): destination with the same identifier (name{page.12}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.102 \include{Chapters/ch3}
+                             [12]
 \openout2 = `Chapters/ch4.aux'.
 
- (./Chapters/ch4.texpdfTeX warning (ext4): destination with the same identifier
- (name{page.12}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1 \chapter
-            {Proposed Work} [12
-
-
-
-]
+ (./Chapters/ch4.tex
 CHAPTER 4.
-<figs/LSTMBBB.pdf, id=365, 469.755pt x 333.245pt>
+<figs/LSTMBBB.pdf, id=350, 469.755pt x 333.245pt>
 File: figs/LSTMBBB.pdf Graphic file (type pdf)
  <use figs/LSTMBBB.pdf>
 Package pdftex.def Info: figs/LSTMBBB.pdf used on input line 13.
@@ -1293,7 +1390,7 @@ Package pdftex.def Info: figs/LSTMBBB.pdf used on input line 13.
 ! Undefined control sequence.
 <argument>  \mathcal {L}(\theta ) &= - \mathbb 
                                                {E}_{q(\theta )}\left [\log p...
-l.26 \end{align}
+l.27 \end{align}
                 
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1304,7 +1401,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ... ] \nonumber \\ &\phantom {=} + \kl 
                                                   {q(\theta )}{p(\theta )}, ...
-l.26 \end{align}
+l.27 \end{align}
                 
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1315,7 +1412,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument>  \mathcal {L}(\theta ) &= - \mathbb 
                                                {E}_{q(\theta )}\left [\log p...
-l.26 \end{align}
+l.27 \end{align}
                 
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1326,51 +1423,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ... ] \nonumber \\ &\phantom {=} + \kl 
                                                   {q(\theta )}{p(\theta )}, ...
-l.26 \end{align}
-                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument>  \mathcal {L}(\theta ) &= - \mathbb 
-                                               {E}_{q(\theta )}\left [\log \...
-l.44 \end{align}
-                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ... ] \nonumber \\ &\phantom {=} + \kl 
-                                                  {q(\theta )}{p(\theta )}, 
-l.44 \end{align}
-                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument>  \mathcal {L}(\theta ) &= - \mathbb 
-                                               {E}_{q(\theta )}\left [\log \...
-l.44 \end{align}
-                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ... ] \nonumber \\ &\phantom {=} + \kl 
-                                                  {q(\theta )}{p(\theta )}, 
-l.44 \end{align}
+l.27 \end{align}
                 
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1382,12 +1435,61 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.13}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.44 \end{align}
-                 [13]
+l.38 L
+      et $B$ be the number of mini-batches and $C$ the number of truncated s...
+[13
+
+
+
+]
+! Undefined control sequence.
+<argument>  \mathcal {L}(\theta ) &= - \mathbb 
+                                               {E}_{q(\theta )}\left [\log \...
+l.46 \end{align}
+                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ... ] \nonumber \\ &\phantom {=} + \kl 
+                                                  {q(\theta )}{p(\theta )}, 
+l.46 \end{align}
+                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument>  \mathcal {L}(\theta ) &= - \mathbb 
+                                               {E}_{q(\theta )}\left [\log \...
+l.46 \end{align}
+                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ... ] \nonumber \\ &\phantom {=} + \kl 
+                                                  {q(\theta )}{p(\theta )}, 
+l.46 \end{align}
+                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 ! Undefined control sequence.
 <argument> ...l {L}_{(b,c)}(\theta ) &= - \mathbb 
                                                   {E}_{q(\theta )}\left [\lo...
-l.54 \end{align}
+l.56 \end{align}
                 
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1398,7 +1500,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ...ntom {=} + w^{(b,c)}_\text {KL} \kl 
                                                   {q(\theta )}{p(\theta )}, ...
-l.54 \end{align}
+l.56 \end{align}
                 
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1409,7 +1511,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ...l {L}_{(b,c)}(\theta ) &= - \mathbb 
                                                   {E}_{q(\theta )}\left [\lo...
-l.54 \end{align}
+l.56 \end{align}
                 
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1420,7 +1522,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ...ntom {=} + w^{(b,c)}_\text {KL} \kl 
                                                   {q(\theta )}{p(\theta )}, ...
-l.54 \end{align}
+l.56 \end{align}
                 
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1435,7 +1537,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.14}) has
 l.60 
       [14 <./figs/LSTMBBB.pdf>]
 ! Undefined control sequence.
-l.65 ...m \mathcal{N}(0,I)$, $\epsilon \in \mathbb
+l.67 ...m \mathcal{N}(0,I)$, $\epsilon \in \mathbb
                                                   {R}^d$.}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1446,7 +1548,7 @@ and I'll forget about whatever was undefined.
 ! Missing number, treated as zero.
 <to be read again> 
                    \ALG@currentblock@0 
-l.73 	\end{algorithmic}
+l.75 	\end{algorithmic}
                        
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1455,14 +1557,14 @@ look up `weird error' in the index to The TeXbook.)
 ! Missing = inserted for \ifnum.
 <to be read again> 
                    \ALG@currentblock@0 
-l.73 	\end{algorithmic}
+l.75 	\end{algorithmic}
                        
 I was expecting to see `<', `=', or `>'. Didn't.
 
 ! Missing number, treated as zero.
 <to be read again> 
                    \ALG@currentblock@0 
-l.73 	\end{algorithmic}
+l.75 	\end{algorithmic}
                        
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1490,73 +1592,49 @@ ptm/m/n/12 , 2015. 37: 1613--1622.
  []
 
 ) [18]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 115.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 115.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 117.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 117.
  (./thesis.aux (./Chapters/ch1.aux) (./Chapters/ch2.aux)
 (./Chapters/ch3.aux) (./Chapters/ch4.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 115.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 115.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 117.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 117.
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: 59566E7D105DFC7149A1E6DB4E2EB282;2147.
 
-
-Package rerunfilecheck Warning: File `thesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `thesis.out':
-(rerunfilecheck)             Before: C99F24358B1F31AEEF3C0693B149D937;2390
-(rerunfilecheck)             After:  81F4195E53820AAD17682EB1724668D9;2328.
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 115.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 117.
  ) 
 Here is how much of TeX's memory you used:
- 18496 strings out of 493029
- 336336 string characters out of 6136234
- 422661 words of memory out of 5000000
- 21548 multiletter control sequences out of 15000+600000
+ 18493 strings out of 493029
+ 336294 string characters out of 6136234
+ 422668 words of memory out of 5000000
+ 21554 multiletter control sequences out of 15000+600000
  16710 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,11n,56p,710b,495s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{equation.2.6} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{equation.2.4} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.2.3} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section.2.6} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.3.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.3.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
-w/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a
-.pfb>
-Output written on thesis.pdf (32 pages, 297002 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri
+8a.pfb>
+Output written on thesis.pdf (32 pages, 299792 bytes).
 PDF statistics:
- 488 PDF objects out of 1000 (max. 8388607)
- 430 compressed objects within 5 object streams
- 90 named destinations out of 1000 (max. 500000)
- 332 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 469 PDF objects out of 1000 (max. 8388607)
+ 411 compressed objects within 5 object streams
+ 81 named destinations out of 1000 (max. 500000)
+ 300 words of extra memory for PDF output out of 10000 (max. 10000000)
 

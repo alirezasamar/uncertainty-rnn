@@ -3,3 +3,4 @@
 \makeabbretable {BBB}{Bayes by Backprop}
 \makeabbretable {CNN}{Convolutional Neural Network}
 \makeabbretable {KL}{Kullback-Leibler}
+\makeabbretable {LSTM}{Long Short-Term Memory}
