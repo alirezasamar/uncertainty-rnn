@@ -19,13 +19,10 @@
 \BOOKMARK [1][-]{section.2.4}{Limitations}{chapter.2}% 19
 \BOOKMARK [1][-]{section.2.5}{Research Gaps}{chapter.2}% 20
 \BOOKMARK [0][-]{chapter.3}{Research Methodology}{}% 21
-\BOOKMARK [1][-]{section.3.1}{Research Activities}{chapter.3}% 22
-\BOOKMARK [1][-]{section.3.2}{Technique: Backprop Through Time}{chapter.3}% 23
-\BOOKMARK [1][-]{section.3.3}{Benchmarks}{chapter.3}% 24
-\BOOKMARK [2][-]{subsection.3.3.1}{Language Modeling}{section.3.3}% 25
-\BOOKMARK [1][-]{section.3.4}{Chapter Summary}{chapter.3}% 26
-\BOOKMARK [0][-]{chapter.4}{Analysis and Design}{}% 27
-\BOOKMARK [1][-]{section.4.1}{Bayes by Backprop}{chapter.4}% 28
-\BOOKMARK [1][-]{section.4.2}{Adoption of Bayes by Backprop to RNNs}{chapter.4}% 29
-\BOOKMARK [1][-]{section.4.3}{Chapter Summary}{chapter.4}% 30
-\BOOKMARK [0][-]{section*.8}{REFERENCES }{}% 31
+\BOOKMARK [1][-]{section.3.1}{Technique: Backprop Through Time}{chapter.3}% 22
+\BOOKMARK [1][-]{section.3.2}{Benchmarks}{chapter.3}% 23
+\BOOKMARK [2][-]{subsection.3.2.1}{Language Modeling}{section.3.2}% 24
+\BOOKMARK [0][-]{chapter.4}{Analysis and Design}{}% 25
+\BOOKMARK [1][-]{section.4.1}{Bayes by Backprop}{chapter.4}% 26
+\BOOKMARK [1][-]{section.4.2}{Adoption of Bayes by Backprop to RNNs}{chapter.4}% 27
+\BOOKMARK [0][-]{section*.8}{REFERENCES }{}% 28

@@ -56,16 +56,12 @@ Others have also considered applying SGLD to neural networks \citep{li2015precon
 
 \section{Limitations}
 \begin{enumerate}
-\item Mentor~Graphics 2
-\begin{enumerate}
-\item item 3
-\end{enumerate}
-\item item 4
+\item What stage to sample the parameters of RNNs?
+\item How to weight the contribution of KL regulariser?
 \end{enumerate}
 
 \section{Research Gaps}
-The form of the posterior in variational inference shapes the quality of the uncertainty estimates and hence the overall performance of the model.
-We shall show how performance of the RNN can be improved by means of adapting (``sharpening'') the posterior locally to a batch.
-This sharpening adapts the variational posterior to a batch of data using gradients based upon the batch.
-This can be viewed as a hierarchical distribution, where a local batch gradient is used to adapt a global posterior, forming a local approximation for each batch.
-This gives a more flexible form  to the typical assumption of Gaussian posterior when variational inference is applied to neural networks, which reduces variance. This technique can be applied more widely across other variational Bayes models.
+The quality of uncertainty estimates and the performance of the model in general is being affected by the form of posterior in variational inference.
+That being said, by adopting the posterior locally, or sharpening, to a batch we can improve the performance using gradients upon the batch.
+
+This technique could gives flexible form  to the typical assumption of Gaussian posterior (GP), that variational inference is applied to neural networks to reduces variance.

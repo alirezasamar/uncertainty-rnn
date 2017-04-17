@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.13)  17 APR 2017 14:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.13)  17 APR 2017 14:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1120,14 +1120,14 @@ l.1 \chapter
 
 ]
 CHAPTER 2.
-<./figs/rnn-rolled.png, id=280, 165.4983pt x 256.91985pt>
+<./figs/rnn-rolled.png, id=265, 165.4983pt x 256.91985pt>
 File: ./figs/rnn-rolled.png Graphic file (type png)
 
 <use ./figs/rnn-rolled.png>
 Package pdftex.def Info: ./figs/rnn-rolled.png used on input line 12.
 (pdftex.def)             Requested size: 66.19814pt x 102.76611pt.
 
-<./figs/rnn-unrolled.png, id=284, 977.8131pt x 256.91985pt>
+<./figs/rnn-unrolled.png, id=269, 977.8131pt x 256.91985pt>
 File: ./figs/rnn-unrolled.png Graphic file (type png)
 
 <use ./figs/rnn-unrolled.png>
@@ -1244,36 +1244,36 @@ g>]
  (./Chapters/ch3.tex
 CHAPTER 3.
 
-LaTeX Warning: Citation `Hochreiter1997' on page 9 undefined on input line 13.
+LaTeX Warning: Citation `Hochreiter1997' on page 9 undefined on input line 9.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.9}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.28 
+l.24 
       [9
 
 
 
 ]
 
-LaTeX Warning: Citation `Marcus1993' on page 10 undefined on input line 47.
+LaTeX Warning: Citation `Marcus1993' on page 10 undefined on input line 43.
 
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 47.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 43.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 47--47
+Underfull \hbox (badness 10000) in paragraph at lines 43--43
 [][][]$\OT1/pcr/m/n/10 https : / / github . com / tensorflow / models / blob / 
 master / tutorials / rnn /
  []
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 56.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 52.
 ! Undefined control sequence.
 <recently read> \abovespace 
                             
-l.58 		\abovespace
+l.54 		\abovespace
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1284,7 +1284,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \abovespace 
                             
-l.70 		\abovespace
+l.66 		\abovespace
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1293,21 +1293,21 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Citation `Kim2016' on page 10 undefined on input line 77.
+LaTeX Warning: Citation `Kim2016' on page 10 undefined on input line 73.
 
 
-LaTeX Warning: Citation `Zilly2016' on page 10 undefined on input line 77.
+LaTeX Warning: Citation `Zilly2016' on page 10 undefined on input line 73.
 
 
-LaTeX Warning: Citation `Merity2016' on page 10 undefined on input line 77.
+LaTeX Warning: Citation `Merity2016' on page 10 undefined on input line 73.
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.10}) has
- been already used, duplicate ignored
+)pdfTeX warning (ext4): destination with the same identifier (name{page.10}) ha
+s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.79 \section
-             {Chapter Summary} [10])pdfTeX warning (ext4): destination with the
- same identifier (name{page.11}) has been already used, duplicate ignored
+l.119 \include{Chapters/ch3}
+                             [10]pdfTeX warning (ext4): destination with the sa
+me identifier (name{page.11}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.119 \include{Chapters/ch3}
@@ -1521,7 +1521,7 @@ LaTeX Warning: Citation `Lipton2016' on page 14 undefined on input line 46.
 
 LaTeX Warning: Citation `Houthooft2016' on page 14 undefined on input line 46.
 
-<figs/LSTMBBB.pdf, id=351, 469.755pt x 333.245pt>
+<figs/LSTMBBB.pdf, id=335, 469.755pt x 333.245pt>
 File: figs/LSTMBBB.pdf Graphic file (type pdf)
  <use figs/LSTMBBB.pdf>
 Package pdftex.def Info: figs/LSTMBBB.pdf used on input line 57.
@@ -1724,7 +1724,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 134.
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 134.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 134.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 1F98DE5AB213A847F15453EB93048BA6;1895.
+(rerunfilecheck)             Checksum: B31F036B9B6CEE13CFDF634B60767CA9;1705.
 
 
 LaTeX Warning: There were undefined references.
@@ -1735,10 +1735,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 134.
  ) 
 Here is how much of TeX's memory you used:
- 18501 strings out of 493029
- 336265 string characters out of 6136234
+ 18492 strings out of 493029
+ 336163 string characters out of 6136234
  423779 words of memory out of 5000000
- 21557 multiletter control sequences out of 15000+600000
+ 21552 multiletter control sequences out of 15000+600000
  24122 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,12n,56p,710b,495s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1759,10 +1759,10 @@ ive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a
 .pfb>
-Output written on thesis.pdf (32 pages, 301192 bytes).
+Output written on thesis.pdf (32 pages, 299962 bytes).
 PDF statistics:
- 467 PDF objects out of 1000 (max. 8388607)
- 409 compressed objects within 5 object streams
- 85 named destinations out of 1000 (max. 500000)
- 276 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 449 PDF objects out of 1000 (max. 8388607)
+ 392 compressed objects within 4 object streams
+ 81 named destinations out of 1000 (max. 500000)
+ 252 words of extra memory for PDF output out of 10000 (max. 10000000)
 

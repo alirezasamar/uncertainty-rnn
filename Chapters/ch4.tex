@@ -79,8 +79,8 @@ Two complications arise to the above naive derivation in practice: firstly, sequ
 Secondly, to reduce variance in the gradients, more than one sequence is trained at a time.
 Thus the typical regime for training RNNs involves training on mini-batches of truncated sequences.
 
-Let $B$ be the number of mini-batches and $C$ the number of truncated sequences (``cuts''),
-then we can write \eqref{eq:rnnelbo} as:
+Let $B$ be the number of mini-batches and $C$ the number of truncated sequences (cuts),
+then \eqref{eq:rnnelbo} as:
 \begin{align}
 	\mathcal{L}(\theta) &=
 	- \mathbb{E}_{q(\theta)}\left[\log \prod_{b=1}^B \prod_{c=1}^{C} p(y^{(b,c)}|\theta, x^{(b,c)}) \right]
@@ -99,7 +99,7 @@ Thus the free energy of mini-batch $b$ of a truncated sequence $c$ can be writte
 	\label{eq:weightelbo}
 \end{align}
 where $w^{(b,c)}_\text{KL}$ distributes the responsibility of the KL cost among minibatches and truncated sequences (thus $\sum_{b=1}^B \sum_{c=1}^C w^{(b,c)}_\text{KL} = 1$), and $s^{(b,c)}_\text{prev}$ refers to the initial state of the RNN for the minibatch $x^{(b,c)}$.
-In practice, we pick $w^{(b,c)}_\text{KL} = \frac{1}{C B}$ so that the KL penalty is equally distributed among all mini-batches and truncated sequences.
+In practice, by choosing $w^{(b,c)}_\text{KL} = \frac{1}{C B}$ so that the KL penalty is equally distributed among all mini-batches and truncated sequences.
 The truncated sequences in each subsequent mini-batches are picked in order, and so $s^{(b,c)}_\text{prev}$ is set to the last state of the RNN for $x^{(b,c-1)}$.
 
 Finally, the question of when to sample weights follows naturally from taking a Monte Carlo approximations to \eqref{eq:weightelbo}: for each minibatch, sample a fresh set of parameters.
@@ -118,5 +118,3 @@ Finally, the question of when to sample weights follows naturally from taking a 
 		\STATE{Update $\sigma$ according to the gradient $\left(\frac{g + \frac{1}{C} g^{KL}_\theta}{B}\right) \epsilon + \frac{g^{KL}_\sigma}{B C}$.}
 	\end{algorithmic}
 \end{algorithm}
-
-\section{Chapter Summary}
