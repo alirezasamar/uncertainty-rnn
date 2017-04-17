@@ -1,6 +1,50 @@
 \chapter{Analysis and Design}
 \label{chap:proposed.work}
 
+\section{Bayes by Backprop}
+
+Bayes by Backprop \cite{Blundell2015a} is a variational inference scheme for learning the posterior distribution on the weights of a neural network.
+The posterior distribution on parameters of the network $\theta \in \mathbb{R}^d$, $q(\theta)$ is typically taken to be a Gaussian with mean parameter $\mu\in \mathbb{R}^d$ and standard deviation parameter $\sigma\in \mathbb{R}^d$, denoted $\mathcal{N}(\theta|\mu,\sigma)$ and it's a diagonal covariance matrix. Where $d$ is the dimensionality of the parameters of the network (usually refers to scale of millions).
+Let $\log p(y|\theta, x)$ be the log-likelihood of the neural network, then the network is trained by minimising the variational free energy, where $p(\theta)$ is a prior on the parameters:
+
+\begin{align}
+	\label{eq:elbo}
+	\mathcal{L}(\theta) &=
+	\mathbb{E}_{q(\theta)}\left[\log \frac{q(\theta)}{p(y|\theta, x)p(\theta)}\right],
+\end{align}
+
+The \textbf{algorithm \ref{alg:bbb}} shows the Bayes by Backprop Monte Carlo procedure for minimising the above equation with respect to the mean and standard deviation parameters of the posterior $q(\theta)$.
+
+Minimising the variational free energy equation is equivalent to maximising the log-likelihood $\log p(y|\theta, x)$ subject to a KL complexity term in the parameters of the network that acts as a regulariser:
+
+\begin{align}
+	\label{eq:klelbo}
+	\mathcal{L}(\theta) &=
+	- \mathbb{E}_{q(\theta)}\left[\log p(y|\theta, x) \right]
+	+ \kl{q(\theta)}{p(\theta)}.
+\end{align}
+
+Gaussian process in a case with zero mean prior, the KL term acts as a form of weight decay on the mean parameters, where the rate of weight decay is automatically tuned by the standard deviation parameters of the prior and posterior.
+
+\begin{algorithm}[ht]
+	\caption{Bayes by Backprop}
+	\label{alg:bbb}
+	\begin{algorithmic}
+		\STATE{Sample $\epsilon \sim \mathcal{N}(0, I)$, $\epsilon \in \mathbb{R}^d$.}
+		\STATE{Set network parameters to $\theta = \mu + \sigma\epsilon$.}
+		\STATE{Do forward propagation and backpropagation as normal.}
+		\STATE{Let $g$ be the gradient with respect	\label{eq:elbo}
+			\mathcal{L}(\theta) &=
+			\mathbb{E}_{q(\theta)}\left[\log \frac{q(\theta)}{p(y|\theta, x)p(\theta)}\right], to $\theta$ from backpropagation.} 
+		\STATE{Let $g^{KL}_\theta, g^{KL}_\mu, g^{KL}_\sigma$ be the gradients of $\log \mathcal{N}(\theta|\mu, \sigma) - \log p(\theta)$ with respect to $\theta$, $\mu$ and 
+			$\sigma$ respectively.} 
+		\STATE{Update $\mu$ according to the gradient $g + g^{KL}_\theta + g^{KL}_\mu$.} 
+		\STATE{Update $\sigma$ according to the gradient $(g + g^{KL}_\theta) \epsilon + g^{KL}_\sigma$.}
+	\end{algorithmic}
+\end{algorithm}
+
+The uncertainty afforded by Bayes by Backprop trained networks has been used successfully for training feed-forward NN models for supervised learning and also to help exploration to reinforcement learning agents \cite{Blundell2015a}, \cite{Lipton2016}, \cite{Houthooft2016}, but until now, BBB has not been applied to recurrent neural networks.
+
 \section{Adoption of Bayes by Backprop to RNNs}
 \label{sec:tbbbtt}
 
@@ -74,32 +118,5 @@ Finally, the question of when to sample weights follows naturally from taking a 
 		\STATE{Update $\sigma$ according to the gradient $\left(\frac{g + \frac{1}{C} g^{KL}_\theta}{B}\right) \epsilon + \frac{g^{KL}_\sigma}{B C}$.}
 	\end{algorithmic}
 \end{algorithm}
-
-\section{Analytical Proofs}
-
-
-\section{Results and Discussion}
-
-
-\begin{table}[p]
-	\centering
-	\caption[Short version of the caption.]{Example of a table. This is a long, very long, long long, long caption.  You can give a shorter caption for the ``list of table" using the square braket symbol.}
-	\vspace{\baselineskip}
-	\begin{tabular}{l c c}
-		\hline
-		\hline
-		Temperature & Resonant Frequency & Q factor\\
-		\hline
-		13 mK $\pm$ 1 mK & 16.93 & 811 \\
-		40 mK $\pm$ 1 mK & 16.93 & 817 \\
-		100 mK $\pm$ 1 mK & 16.93 & 815 \\
-		300 mK $\pm$ 1 mK & 16.93 & 806\\
-		500 mK $\pm$ 1 mK & 16.93 & 811\\
-		800 mK $\pm$ 5 mK & 16.93 & 814\\
-		1000 mK $\pm$ 5 mK & 16.93 & 806 \\
-		\hline
-		\hline
-	\end{tabular}
-\end{table}
 
 \section{Chapter Summary}

@@ -1,4 +1,12 @@
-\makesymboltable {$\gamma $}{Whatever}
-\makesymboltable {$\sigma $}{Whatever}
-\makesymboltable {$\varepsilon $}{Whatever}
+\makesymboltable {$A$}{A rolled NN}
+\makesymboltable {\textbf {A}}{Matrix}
+\makesymboltable {a}{vector}
+\makesymboltable {$t$}{Steps/Length of RNN}
+\makesymboltable {$x_t$}{Input value}
 \makesymboltable {$\eta $}{Trained parameter}
+\makesymboltable {$c$}{Internal core sate}
+\makesymboltable {$h$}{Exposed sate}
+\makesymboltable {$i_t$}{Input gate}
+\makesymboltable {$f_t$}{Forget gate}
+\makesymboltable {$h_t$}{Exposed sate}
+\makesymboltable {$W$}{Weights (biases)}

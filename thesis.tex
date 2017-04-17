@@ -59,11 +59,11 @@
 %\end{acknowledgement}
 
 \begin{abstract}
-Deep learning has outperformed in various fields from computer vision, and language processing to physics, biology, and manufacturing. This means the deep or multi-layer architecture of neural networks are being extensively used in these fields; for instance convolutional neural networks (CNN) as image processing tools, and recurrent neural networks (RNN) as sequence processing model.
+Recurrent neural networks (RNN), and especially Deep RNNs have outperformed in various fields from computer vision, and language processing to physics, biology, and manufacturing. This means the deep or multi-layer architecture of neural networks are being extensively used in these fields; for instance convolutional neural networks (CNN) as image processing tools, and recurrent neural networks (RNN) as sequence processing model various from language modeling to image captioning.
 
-However, in traditional sciences fields such as physics and biology, model uncertainty is crucial, especially in time series models where delay can’t be tolerated. In this work, I aim to propose a novel theoretical framework and develop tools to measure uncertainty estimates, especially in deep recurrent neural networks.
+However, in traditional sciences fields such as physics and biology, analysis model uncertainty is crucial, especially in time series models where delay can’t be tolerated. This observation and probabilistic models provides the confidence bounds for understanding data and making the decision based on analysis.
 
-This work also tackles a widely known difficulty of training recurrent neural networks, vanishing gradient by proposing a novel architecture of RNN that compute weighted average unit on past iteration.
+This work aims to propose a novel theoretical framework and develop tools to measure uncertainty estimates by adoption of Bayes by Backprop to the given network, especially in deep recurrent neural networks. The performance of proposed technique in this work will be extensively evaluated with widely studied benchmark.
 
 \end{abstract}
 
@@ -78,18 +78,35 @@ This work also tackles a widely known difficulty of training recurrent neural ne
 %List of abbreviation 
 \listofabbre
 \addabbre{ANN}{Artificial Neural Network}
+\addabbre{NN}{Neural Network}
+\addabbre{BNN}{Bayesian Neural Network}
 \addabbre{RNN}{Recurrent Neural Network}
 \addabbre{BBB}{Bayes by Backprop}
 \addabbre{CNN}{Convolutional Neural Network}
 \addabbre{KL}{Kullback-Leibler}
+\addabbre{GP}{Gaussian Process}
+\addabbre{MC}{Monte Carlo}
+\addabbre{VI}{Variational Inference}
+\addabbre{MCMC}{Markov Chain Monte Carlo}
 \addabbre{LSTM}{Long Short-Term Memory}
+\addabbre{SRT}{Stochastic Regularisation Technique (such as dropout)}
+\addabbre{i.e.}{Id est (“it is”)}
+\addabbre{w.r.t.}{With respect to}
 
 %List of symbols 
 \listofsymbols
-\addsymbol{$\gamma$}{Whatever}
-\addsymbol{$\sigma$}{Whatever}
-\addsymbol{$\varepsilon$}{Whatever}
+\addsymbol{$A$}{A rolled NN}
+\addsymbol{\textbf{A}}{Matrix}
+\addsymbol{a}{vector}
+\addsymbol{$t$}{Steps/Length of RNN}
+\addsymbol{$x_t$}{Input value}
 \addsymbol{$\eta$}{Trained parameter}
+\addsymbol{$c$}{Internal core sate}
+\addsymbol{$h$}{Exposed sate}
+\addsymbol{$i_t$}{Input gate}
+\addsymbol{$f_t$}{Forget gate}
+\addsymbol{$h_t$}{Exposed sate}
+\addsymbol{$W$}{Weights (biases)}
 
 %List of appendices
 %\listofappendices

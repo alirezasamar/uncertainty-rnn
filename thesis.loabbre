@@ -1,6 +1,15 @@
 \makeabbretable {ANN}{Artificial Neural Network}
+\makeabbretable {NN}{Neural Network}
+\makeabbretable {BNN}{Bayesian Neural Network}
 \makeabbretable {RNN}{Recurrent Neural Network}
 \makeabbretable {BBB}{Bayes by Backprop}
 \makeabbretable {CNN}{Convolutional Neural Network}
 \makeabbretable {KL}{Kullback-Leibler}
+\makeabbretable {GP}{Gaussian Process}
+\makeabbretable {MC}{Monte Carlo}
+\makeabbretable {VI}{Variational Inference}
+\makeabbretable {MCMC}{Markov Chain Monte Carlo}
 \makeabbretable {LSTM}{Long Short-Term Memory}
+\makeabbretable {SRT}{Stochastic Regularisation Technique (such as dropout)}
+\makeabbretable {i.e.}{Id est (“it is”)}
+\makeabbretable {w.r.t.}{With respect to}

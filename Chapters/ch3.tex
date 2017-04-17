@@ -41,5 +41,39 @@ where $x_{1:T}$ is the sequence of input vectors and $s_{1:T}$ is the sequence o
 This RNN parameters are trained in the same way as a feed-forward neural network and a loss is applied to the states $s_{1:T}$ of the RNN, and then backpropagation is being used to update the weights of the trained network.
 Since the weights in each of the unrolled step are shared, each weight of the RNN core receives $T$ gradient contributions when the it is unrolled for $T$ steps.
 
-\section{Tools and Platforms}
+\section{Benchmarks}
+
+\subsection{Language Modeling}
+The experiments result of this work will be tested in Chapter 5, on the Penn Treebank \cite{Marcus1993} benchmark, a task consisting on next word prediction. Using the network architecture from \cite{Zaremba2014} as a baseline and for which there is an open source implementation\footnote{\url{https://github.com/tensorflow/models/blob/master/tutorials/rnn/ptb/ptb_word_lm.py}}.
+
+\begin{table}[t]
+	\caption{Word-level perplexity on the Penn Treebank language modelling task (lower is better).}
+	\label{tab:ptb}
+	\vskip 0.15in
+	\centering
+	\small
+	\begin{tabular}{r|c|c}
+		\textbf{Model (medium)}             & \textbf{Validation} & \textbf{Test} \\ 
+		\hline
+		\abovespace
+		LSTM & 120.7 & 114.5\\
+		LSTM dropout                        & 	86.2	        &	82.1 \\
+		SGLD    	                        &	N/A				&	109.1		\\
+		SGLD dropout	                    &	N/A				&	99.6		\\
+		Variational LSTM (tied weights)     &	81.8        	&	79.7 \\
+		Variational LSTM (tied weights, MS)	&	N/A		        &	79.0		\\
+		\hline 
+		& &  \\
+		\shortstack{\textbf{Model (medium)} \\ \textbf{with Dynamic Evaluation}}
+		& \textbf{Validation} & \textbf{Test} \\
+		\hline
+		\abovespace
+		LSTM dropout                      & 	79.7	        &	77.1 \\
+		\hline
+	\end{tabular}
+	\vskip -0.1in
+\end{table}
+
+A vast report on recent advances on the Penn Treebank benchmark \cite{Kim2016}, \cite{Zilly2016}, \cite{Merity2016} that shows achievement of perplexities of 70.9 on the test set.
+
 \section{Chapter Summary}

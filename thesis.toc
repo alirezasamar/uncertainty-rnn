@@ -8,33 +8,30 @@
 \addvspace {\@twolinespacing }
 \contentsline {chapter}{\numberline {1}\MakeUppercase {Introduction}}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Introduction: The Importance of Uncertainty}{1}{section.1.1}
-\contentsline {section}{\numberline {1.2}Introduction: A Fundamental Problem}{1}{section.1.2}
-\contentsline {section}{\numberline {1.3}Problem Background}{1}{section.1.3}
-\contentsline {section}{\numberline {1.4}Problem Statement}{2}{section.1.4}
-\contentsline {section}{\numberline {1.5}Project Aim}{2}{section.1.5}
-\contentsline {section}{\numberline {1.6}Project Questions}{3}{section.1.6}
-\contentsline {section}{\numberline {1.7}Objective and Scope}{3}{section.1.7}
+\contentsline {section}{\numberline {1.2}Problem Background}{1}{section.1.2}
+\contentsline {section}{\numberline {1.3}Problem Statement}{2}{section.1.3}
+\contentsline {section}{\numberline {1.4}Project Aim}{2}{section.1.4}
+\contentsline {section}{\numberline {1.5}Project Questions}{2}{section.1.5}
+\contentsline {section}{\numberline {1.6}Objective and Scope}{3}{section.1.6}
 \addvspace {\@twolinespacing }
 \contentsline {chapter}{\numberline {2}\MakeUppercase {Literature Review}}{5}{chapter.2}
 \contentsline {section}{\numberline {2.1}Introduction}{5}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Recurrent Neural Networks}{5}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Bayes by Backprop}{5}{subsection.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}Model Confidence}{7}{subsection.2.1.3}
-\contentsline {subsection}{\numberline {2.1.4}Model Uncertainty and Safety}{7}{subsection.2.1.4}
-\contentsline {section}{\numberline {2.2}State-of-the-Arts}{7}{section.2.2}
-\contentsline {section}{\numberline {2.3}Limitations}{8}{section.2.3}
-\contentsline {section}{\numberline {2.4}Research Gaps}{9}{section.2.4}
+\contentsline {section}{\numberline {2.2}Similar Works}{5}{section.2.2}
+\contentsline {section}{\numberline {2.3}State-of-the-Arts}{6}{section.2.3}
+\contentsline {section}{\numberline {2.4}Limitations}{7}{section.2.4}
+\contentsline {section}{\numberline {2.5}Research Gaps}{7}{section.2.5}
 \addvspace {\@twolinespacing }
-\contentsline {chapter}{\numberline {3}\MakeUppercase {Research Methodology}}{11}{chapter.3}
-\contentsline {section}{\numberline {3.1}Research Activities}{11}{section.3.1}
-\contentsline {section}{\numberline {3.2}Technique: Backprop Through Time}{11}{section.3.2}
-\contentsline {section}{\numberline {3.3}Tools and Platforms}{12}{section.3.3}
-\contentsline {section}{\numberline {3.4}Chapter Summary}{12}{section.3.4}
+\contentsline {chapter}{\numberline {3}\MakeUppercase {Research Methodology}}{9}{chapter.3}
+\contentsline {section}{\numberline {3.1}Research Activities}{9}{section.3.1}
+\contentsline {section}{\numberline {3.2}Technique: Backprop Through Time}{9}{section.3.2}
+\contentsline {section}{\numberline {3.3}Benchmarks}{10}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Language Modeling}{10}{subsection.3.3.1}
+\contentsline {section}{\numberline {3.4}Chapter Summary}{11}{section.3.4}
 \addvspace {\@twolinespacing }
 \contentsline {chapter}{\numberline {4}\MakeUppercase {Analysis and Design}}{13}{chapter.4}
-\contentsline {section}{\numberline {4.1}Adoption of Bayes by Backprop to RNNs}{13}{section.4.1}
-\contentsline {section}{\numberline {4.2}Analytical Proofs}{15}{section.4.2}
-\contentsline {section}{\numberline {4.3}Results and Discussion}{15}{section.4.3}
-\contentsline {section}{\numberline {4.4}Chapter Summary}{15}{section.4.4}
+\contentsline {section}{\numberline {4.1}Bayes by Backprop}{13}{section.4.1}
+\contentsline {section}{\numberline {4.2}Adoption of Bayes by Backprop to RNNs}{14}{section.4.2}
+\contentsline {section}{\numberline {4.3}Chapter Summary}{16}{section.4.3}
 \addvspace {\@twolinespacing }
 \contentsline {chapter}{\hspace {-\toc@sep@chap }\normalsize \MakeUppercase {REFERENCES} \normalfont }{17}{section*.8}
