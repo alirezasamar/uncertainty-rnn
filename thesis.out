@@ -17,22 +17,21 @@
 \BOOKMARK [2][-]{subsection.2.1.1}{Recurrent Neural Networks}{section.2.1}% 17
 \BOOKMARK [2][-]{subsection.2.1.2}{Bayes by Backprop}{section.2.1}% 18
 \BOOKMARK [1][-]{section.2.2}{Backprop Through Time}{chapter.2}% 19
-\BOOKMARK [1][-]{section.2.3}{Truncated Bayes by Backprop Through Time}{chapter.2}% 20
-\BOOKMARK [2][-]{subsection.2.3.1}{Model Confidence}{section.2.3}% 21
-\BOOKMARK [2][-]{subsection.2.3.2}{Model Uncertainty and Safety}{section.2.3}% 22
-\BOOKMARK [1][-]{section.2.4}{State-of-the-Arts}{chapter.2}% 23
-\BOOKMARK [1][-]{section.2.5}{Limitations}{chapter.2}% 24
-\BOOKMARK [1][-]{section.2.6}{Research Gaps}{chapter.2}% 25
-\BOOKMARK [0][-]{chapter.3}{Research Methodology}{}% 26
-\BOOKMARK [1][-]{section.3.1}{Top-level View}{chapter.3}% 27
-\BOOKMARK [1][-]{section.3.2}{Research Activities}{chapter.3}% 28
-\BOOKMARK [1][-]{section.3.3}{Controllables vs. Obseravables}{chapter.3}% 29
-\BOOKMARK [1][-]{section.3.4}{Techniques}{chapter.3}% 30
-\BOOKMARK [1][-]{section.3.5}{Tools and Platforms}{chapter.3}% 31
-\BOOKMARK [1][-]{section.3.6}{Chapter Summary}{chapter.3}% 32
-\BOOKMARK [0][-]{chapter.4}{Proposed Work}{}% 33
-\BOOKMARK [1][-]{section.4.1}{The Big Picture}{chapter.4}% 34
-\BOOKMARK [1][-]{section.4.2}{Analytical Proofs}{chapter.4}% 35
-\BOOKMARK [1][-]{section.4.3}{Results and Discussion}{chapter.4}% 36
-\BOOKMARK [1][-]{section.4.4}{Chapter Summary}{chapter.4}% 37
-\BOOKMARK [0][-]{section*.8}{REFERENCES }{}% 38
+\BOOKMARK [2][-]{subsection.2.2.1}{Model Confidence}{section.2.2}% 20
+\BOOKMARK [2][-]{subsection.2.2.2}{Model Uncertainty and Safety}{section.2.2}% 21
+\BOOKMARK [1][-]{section.2.3}{State-of-the-Arts}{chapter.2}% 22
+\BOOKMARK [1][-]{section.2.4}{Limitations}{chapter.2}% 23
+\BOOKMARK [1][-]{section.2.5}{Research Gaps}{chapter.2}% 24
+\BOOKMARK [0][-]{chapter.3}{Research Methodology}{}% 25
+\BOOKMARK [1][-]{section.3.1}{Top-level View}{chapter.3}% 26
+\BOOKMARK [1][-]{section.3.2}{Research Activities}{chapter.3}% 27
+\BOOKMARK [1][-]{section.3.3}{Controllables vs. Obseravables}{chapter.3}% 28
+\BOOKMARK [1][-]{section.3.4}{Techniques}{chapter.3}% 29
+\BOOKMARK [1][-]{section.3.5}{Tools and Platforms}{chapter.3}% 30
+\BOOKMARK [1][-]{section.3.6}{Chapter Summary}{chapter.3}% 31
+\BOOKMARK [0][-]{chapter.4}{Proposed Work}{}% 32
+\BOOKMARK [1][-]{section.4.1}{Truncated Bayes by Backprop Through Time}{chapter.4}% 33
+\BOOKMARK [1][-]{section.4.2}{Analytical Proofs}{chapter.4}% 34
+\BOOKMARK [1][-]{section.4.3}{Results and Discussion}{chapter.4}% 35
+\BOOKMARK [1][-]{section.4.4}{Chapter Summary}{chapter.4}% 36
+\BOOKMARK [0][-]{section*.8}{REFERENCES }{}% 37
