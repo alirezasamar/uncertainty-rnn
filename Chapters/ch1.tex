@@ -24,12 +24,22 @@ At the same time, by using a prior to integrate out the parameters to average ac
 
 \section{Problem Statement}
 
-Surprisingly, latest work on this problem has not gone further to directly apply a variational Bayes inference scheme for RNNs as was done in practical.
+The uncertainty afforded by Bayes by Backprop trained networks has been used successfully for training feed-forward NN models for supervised learning and also to help exploration to reinforcement learning agents \cite{Blundell2015a}, \cite{Lipton2016}, \cite{Houthooft2016}, but until now, BBB has not been applied to recurrent neural networks.
 
+Surprisingly, latest work on this problem has not gone further to directly apply a variational Bayes inference scheme for RNNs as was done in practical, mainly because of LSTM-RNN outperforming results in multi-GPUs architecture.
 
 \section{Project Aim}
 
 The aim of this work is to propose a novel improved technique and develop tools to measure uncertainty estimates by adoption of Bayes by Backprop to the given network, especially in deep recurrent neural networks and test the performance of proposed technique in this work with widely studied benchmarks.
+
+The proposed technique is based on Bayes by Backprop \cite{Blundell2015a} that performs very well on large scale data.
+The approach targets the estimate of the posterior distribution of the weight of the RNN by truncate backpropagation through time.
+The advantages of applying Bayesian methods to any deep NN are:
+\begin{enumerate}
+	\item Explicit representation of uncertainty
+	\item regularisation
+\end{enumerate}
+Proposed technique goal is to leads to a cost function with bits-back argument \cite{Hinton1993} with KL divergence as regulariser.
 
 \section{Project Questions}
 
@@ -50,4 +60,4 @@ The objectives of this work are as follows:
 \end{enumerate}
 
 \section{Chapter Summary}
-
+This chapter provides general outline of this research which is to provide an improved technique by adopting Bayes by Backprop (BBB) in Recurrent Neural Networks (RNNs) to estimate the uncertainty of the model prediction.
