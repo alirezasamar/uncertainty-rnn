@@ -1,41 +1,7 @@
 \chapter{Research Methodology}
 \label{chap:method}
 
-\section{Technique: Backprop Through Time}
-\label{sec:bptt}
 
-As illustrated in \ref{fig:rnn-rolled}, the core of an recurrent neural networks (RNNs), $f$, is a neural network that maps the RNN state at step $t$, $s_t$ and an input observation $x_t$ to a new RNN state $s_{t+1}$, $f: (s_t, x_t) \mapsto s_{t+1}$.
-
-For comparison, an LSTM-powered RNN core \cite{Hochreiter1997} has a state $s_t = (c_t, h_t)$ where $c$ is an internal core state and $h$ is the exposed state. Intermediate gates modulate the effect of the inputs on the outputs, gates like the input gate $i_t$, forget gate $f_t$ and output gate $o_t$. The correlation between the inputs, outputs and internal gates of an LSTM cell can be explained as:
-
-\begin{align*}
-i_t &= \sigma(W_i [x_t, h_{t-1}]^T + b_i), \\
-f_t &= \sigma(W_f [x_t, h_{t-1}]^T + b_f), \\
-c_t &= f_t c_{t-1} + i_t \tanh(W_c [x_t, h_{t-1}] + b_c), \\
-o_t &= \sigma(W_o [x_t, h_{t-1}]^T + b_o), \\
-h_t &= o_t \tanh(c_t),
-\end{align*}
-
-In the above statement, $W_i$ ($b_i$), $W_f$ ($b_f$), $W_c$ ($b_c$) and $W_o$ ($b_o$) are the weights (biases) that are affecting the input gate, forget gate, cell update, and output gate accordingly.
-
-An RNN can be trained on a sequence of $T$ using backpropagation through time where the RNN is unrolled $T$ times like a feed-forward network.
-Which can be achieve with forming the feed-forward network with inputs
-$x_1, x_2, \dots, x_T$ and initial state $s_0$:
-
-\begin{align}
-s_1 &= f(s_0, x_1), \nonumber \\
-s_2 &= f(s_1, x_2), \nonumber \\
-&\dots \nonumber \\
-\label{eq:unroll}
-s_T &= f(s_{T-1}, x_T), 
-\end{align}
-
-where $s_T$ is the total length (final state) of the RNN.
-Referring to the unrolled RNN for $T$ steps as in \eqref{eq:unroll} by $s_{1:T} = F_T(x_{1:T}, s_0)$,
-where $x_{1:T}$ is the sequence of input vectors and $s_{1:T}$ is the sequence of corresponding states. However, the truncated version of the algorithm can be seen as taking $s_0$ as the last state of the previous batch, $s_T$.
-
-This RNN parameters are trained in the same way as a feed-forward neural network and a loss is applied to the states $s_{1:T}$ of the RNN, and then backpropagation is being used to update the weights of the trained network.
-Since the weights in each of the unrolled step are shared, each weight of the RNN core receives $T$ gradient contributions when the it is unrolled for $T$ steps.
 
 \section{Benchmarks}
 
