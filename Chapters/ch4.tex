@@ -46,9 +46,9 @@ Gaussian process in a case with zero mean prior, the KL term acts as a form of w
 \section{Adoption of Bayes by Backprop to RNNs}
 \label{sec:tbbbtt}
 
-Applying Bayes by Backprop (BBB) to RNNs is illustrated in \textbf{Figure \ref{fig:lstmbbb}} where the weight matrices of the RNN are drawn from a distribution (learnt by BBB).
-However, this direct application raises two questions: when to sample the parameters of the RNN, and how to weight the contribution of the KL regulariser of \eqref{eq:klelbo}.
-To address these concerns in the adaptation of BBB to RNNs, Algorithm \ref{alg:rnnbbb} given where:
+Adopting Bayes by Backprop (BBB) to RNNs as illustrated in \textbf{Figure \ref{fig:lstmbbb}} where the weight matrices of the RNN are drawn from a distribution.
+
+To address these concerns mentioned in the \textbf{Chapter \ref{chap:lit.review}: Research Gap}, where the question is how to weight the contribution of KL regulariser in the adaptation of BBB to RNNs, Algorithm \ref{alg:rnnbbb} given where:
 
 \begin{figure}
 	\centering
@@ -73,9 +73,14 @@ The parameters of the entire network are $\theta$.
 Although the RNN is unrolled $T$ times, each weight is penalised just once by the KL term, rather than $T$ times.
 Also clear from \eqref{eq:rnnelbo} is that when a Monte Carlo approximation is taken to the expectation, the parameters $\theta$ should be held fixed throughout the entire sequence.
 
-Two complications arise to the above naive derivation in practice: firstly, sequences are often long enough and models sufficiently large, that unrolling the RNN for the whole sequence is prohibitive.
-Secondly, to reduce variance in the gradients, more than one sequence is trained at a time.
-Thus the typical regime for training RNNs involves training on mini-batches of truncated sequences.
+Two obstacles show up to the above naive derivation: 
+
+\begin{enumerate}
+    \item Sequences are often long enough and model sufficiently large, that unrolling the RNN for the whole sequence is prohibitive.
+    \item To reduce variance in the gradients, more than one sequence is trained at a time.
+\end{enumerate}
+
+However, the common regime for training RNNs involves training on mini-batches of truncated sequences.
 
 Let $B$ be the number of mini-batches and $C$ the number of truncated sequences (cuts),
 then \eqref{eq:rnnelbo} as:
@@ -100,7 +105,7 @@ where $w^{(b,c)}_\text{KL}$ distributes the responsibility of the KL cost among 
 In practice, by choosing $w^{(b,c)}_\text{KL} = \frac{1}{C B}$ so that the KL penalty is equally distributed among all mini-batches and truncated sequences.
 The truncated sequences in each subsequent mini-batches are picked in order, and so $s^{(b,c)}_\text{prev}$ is set to the last state of the RNN for $x^{(b,c-1)}$.
 
-Finally, the question of when to sample weights follows naturally from taking a Monte Carlo approximations to \eqref{eq:weightelbo}: for each minibatch, sample a fresh set of parameters.
+Finally, the question of what stage to sample weights follows naturally from taking a Monte Carlo approximations to \eqref{eq:weightelbo}: for each minibatch, sample a fresh set of parameters.
 
 \begin{algorithm}[ht]
 	\caption{Bayes by Backprop for RNNs}

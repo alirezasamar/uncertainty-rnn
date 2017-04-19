@@ -1,11 +1,30 @@
 \chapter{Research Methodology}
 \label{chap:method}
 
+\section{Operational Framework}
+This research work can be described in the operational framework as illustrated in \textbf{Figure \ref{fig:opfw}}. It contains a structured set of activities have been designed to accomplish the objectives. The operational framework also monitors the progress of the project in several steps.
 
+\begin{figure}[p]
+	\centering
+	\includegraphics[scale=0.25]{./figs/opfw}
+	\caption[Research Operational Framework]{Research Operational Framework.}
+	\label{fig:opfw}
+\end{figure}
 
-\section{Benchmarks}
+\section{Planning and Research}
+In this phase, previous works and the state-of-the-art has been extensively studied. Similar works like \textit{line search}, \textit{dynamic evaluation}, and \textit{learning to optimise} have reviewed to figure out research gap as described vastly in \textbf{Chapter \ref{chap:lit.review}}.
 
-\subsection{Language Modeling}
+\section{Investigation of Model Confidence}
+The quality of uncertainty estimates and the performance of the model in general is being affected by the form of posterior in variational inference.
+
+That being said, by adopting the posterior locally, or sharpening, to a batch, there is a chance to improve the performance using gradients upon the batch.
+
+\section{Propose and Develop a Technique}
+While previous works train a parametric model, the proposed approach treat these as free parameters (so that they can adapt more quickly to the non-stationary distribution with respect to parameters). In this work, gradient information has been used to inform a variational posterior to reduce the variance of Bayesian Neural Networks. Therefore, although it is similar in flavour, the underlying motivations are quite different.
+
+This technique could gives flexible form  to the typical assumption of Gaussian posterior (GP), that variational inference is applied to neural networks to reduces variance.
+
+\section{Evaluation: Language Modeling}
 The experiments result of this work will be tested in Chapter 5, on the Penn Treebank \cite{Marcus1993} benchmark, a task consisting on next word prediction. Using the network architecture from \cite{Zaremba2014} as a baseline and for which there is an open source implementation\footnote{\url{https://github.com/tensorflow/models/blob/master/tutorials/rnn/ptb/ptb_word_lm.py}}.
 
 \begin{table}[t]
@@ -15,7 +34,7 @@ The experiments result of this work will be tested in Chapter 5, on the Penn Tre
 	\centering
 	\small
 	\begin{tabular}{r|c|c}
-		\textbf{Model (medium)}             & \textbf{Validation} & \textbf{Test} \\ 
+		\textbf{Model}             & \textbf{Validation} & \textbf{Test} \\ 
 		\hline
 		\abovespace
 		LSTM & 120.7 & 114.5\\
@@ -26,7 +45,7 @@ The experiments result of this work will be tested in Chapter 5, on the Penn Tre
 		Variational LSTM (tied weights, MS)	&	N/A		        &	79.0		\\
 		\hline 
 		& &  \\
-		\shortstack{\textbf{Model (medium)} \\ \textbf{with Dynamic Evaluation}}
+		\shortstack{\textbf{Model} \\ \textbf{with Dynamic Evaluation}}
 		& \textbf{Validation} & \textbf{Test} \\
 		\hline
 		\abovespace
@@ -37,3 +56,6 @@ The experiments result of this work will be tested in Chapter 5, on the Penn Tre
 \end{table}
 
 A vast report on recent advances on the Penn Treebank benchmark \cite{Kim2016}, \cite{Zilly2016}, \cite{Merity2016} that shows achievement of perplexities of 70.9 on the test set.
+
+\section{Chapter Summary}
+This chapter the operational framework of this research work has been described in details of each step which navigate the project from planning to evaluation.

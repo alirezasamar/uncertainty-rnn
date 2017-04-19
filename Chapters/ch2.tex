@@ -62,17 +62,13 @@ Nevertheless, a few papers explored applying expectation propagation to NNs:
 \cite{Teh2015a} derive a distributed expectation propagation scheme with SGLD \cite{Welling2011} as an inner loop.
 Others have also considered applying SGLD to neural networks \cite{Li2016a} and \cite{Gan2016} more recently used SGLD for LSTMs\footnote{One of the selected benchmark}.
 
-\section{Limitations}
-\begin{enumerate}
-\item What stage to sample the parameters of RNNs?
-\item How to weight the contribution of KL regulariser?
-\end{enumerate}
-
 \section{Research Gaps}
-The quality of uncertainty estimates and the performance of the model in general is being affected by the form of posterior in variational inference.
-That being said, by adopting the posterior locally, or sharpening, to a batch we can improve the performance using gradients upon the batch.
+Adopting Bayes by Backprop (BBB) to Recurrent neural networks (RNNs), where the weight matrices of the RNN are drawn from a distribution could raise two questions:
 
-This technique could gives flexible form  to the typical assumption of Gaussian posterior (GP), that variational inference is applied to neural networks to reduces variance.
+\begin{enumerate}
+	\item What stage to sample the parameters of the RNNs?
+	\item How to weight the contrubution of KL regularisation?
+\end{enumerate}
 
 \section{Technique: Backprop Through Time}
 \label{sec:bptt}
