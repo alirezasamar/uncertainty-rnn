@@ -1,50 +1,53 @@
 \chapter{Introduction}
 \label{chap:intro}
 
-\section{Introduction: The Importance of Uncertainty}
+\section{Introduction: The Importance of Uncertainty in Machine Learning}
 
-The Bayesian approach to machine learning is based on using probability to represent all forms of uncertainty. There are different models like the Gaussian process to understand possible likely and less likely options to generalize the observed data by defining the probability of distributions over functions. This observation and probabilistic models provides the confidence bounds for understanding data and making the decision based on analysis. For instance, an autonomous vehicle would use the determination from confidence bounds to whether brake or not. The confidence bounds simply means \textbf{\textit{how certain the model is about its output?}}
+Uncertainty is represented using probability in the Bayesian machine learning. There are different models like the Gaussian process to understand possible likely and less likely options to generalize the observed data by defining the probability of distributions over functions. This observation and probabilistic models provides the confidence bounds for understanding data and making the decision based on analysis. For instance, an autonomous vehicle would use the determination from confidence bounds to whether brake or not. The confidence bounds simply means \textbf{\textit{how certain the model is about its output?}}
 
-Understanding whether the chosen model is the right one or not, or the data has enough signals or not is an active field of research \cite{Ghahramani2015} in \textit{Bayesian machine learning}, especially in \textit{deep learning models} where based on predictions result it's difficult to make sure about the certainty level of predictions.  
+Understanding whether the chosen model is the right one or not, or the data has enough signals or not is an active field of research \cite{Ghahramani2015} in \textit{Bayesian machine learning}, especially in \textit{deep learning models} where based on predictions result it is difficult to make sure about the certainty level of predictions.  
 
 %\section{Introduction: A Fundamental Problem}
 
 \section{Problem Background}
 
 Recurrent Neural Networks (RNNs) achieve state-of-the-art performance on a wide range of sequence prediction tasks (\cite{Wu2016}; \cite{Amodei2015}; \cite{Jozefowicz2016}; \cite{Zaremba2014}; \cite{Lu2016}).
-In this work we shall examine how to add uncertainty and regularisation to RNNs by means of applying Bayesian methods to training.
+Recent approaches either attempt to justify dropout \cite{Srivastava2014} and weight decay as a variational inference scheme \cite{Gal2015}, or apply Stochastic Gradient Langevin dynamics \cite{Welling2011} to truncated backpropagation in time directly \cite{Gan2016}.
+
+One of the difficulties in models is the likelihood to overfit - decreasing the loss function on training set \textbf{$X, Y$} while loss is increasing in test set \textbf{$X_(test), Y_(test)$}. That's why the regularisation is being used during optimization for each parameter weighted by some weight decays which result minimization or often called cost.
+
+In this work aims to examine how to add uncertainty and regularisation to RNNs by means of applying Bayesian methods to training.
 Bayesian methods give RNNs another way to express their uncertainty (via the parameters).
 At the same time, by using a prior to integrate out the parameters to average across many models during training, this gives a regularisation effect to the network.
-Recent approaches either attempt to justify dropout \cite{Srivastava2014} and weight decay as a variational inference scheme \cite{Gal2015}, or apply Stochastic Gradient Langevin dynamics \cite{Welling2011} to truncated backpropagation in time directly \cite{Gan2016}.
 
 %\subsection{Applications of Model Uncertainty}
 
 \section{Problem Statement}
 
-Interestingly, recent work has not explored further directly apply a variational Bayes inference scheme for RNNs as was done in practical.
-We derive a straightforward approach based upon Bayes by Backprop \cite{Blundell2015a} that we show works well on large scale problems.
-Our approach is a simple alteration to truncated backpropagation through time that results in an estimate of the posterior distribution on the weights of the RNN.
-Applying Bayesian methods to successful deep learning models affords two advantages: explicit representations of uncertainty and regularisation.
-Our formulation explicitly leads to a cost function with an information theoretic justification by means of a bits-back argument \cite{Hinton1993} where a KL divergence acts as a regulariser.
+Surprisingly, latest work on this problem has not gone further to directly apply a variational Bayes inference scheme for RNNs as was done in practical.
+
 
 \section{Project Aim}
 
-The aim of this work is to propose a novel theoretical framework and develop tools to measure uncertainty estimates by adoption of Bayes by Backprop to the given network, especially in deep recurrent neural networks and test the performance of proposed technique in this work with widely studied benchmarks.
+The aim of this work is to propose a novel improved technique and develop tools to measure uncertainty estimates by adoption of Bayes by Backprop to the given network, especially in deep recurrent neural networks and test the performance of proposed technique in this work with widely studied benchmarks.
 
 \section{Project Questions}
 
-The contributions of this work are as follows:
+The research questions of this work are as follows:
 \begin{enumerate}
 	\item How to do uncertainty analysis in RNNs?
 	\item How to reduce the variance of probabilistic views?
-	\item How regularisation techniques can improve the performance?
+	\item How regularisation techniques can improve the performance of BBB?
 \end{enumerate}
 
 \section{Objective and Scope}
 
-The contributions of this work are as follows:
+The objectives of this work are as follows:
 \begin{enumerate}
 	\item To investigate and demonstrate how Bayes by Backprop (BBB) can be efficiently applied to Recurrent Neural Networks (RNNs).
-	\item Develop a novel technique to reduces the variance of Bayes by Backprop (BBB).
-	\item Improve the performance on a widely studied benchmark with established regularisation technique such as dropout.
+	\item To propose a novel technique to reduces the variance of Bayes by Backprop (BBB).
+	\item To evaluate the proposed technique on a widely studied benchmark with established regularisation technique such as dropout.
 \end{enumerate}
+
+\section{Chapter Summary}
+
