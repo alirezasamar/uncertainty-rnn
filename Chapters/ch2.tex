@@ -7,7 +7,7 @@
 
 Recurrent Neural Networks (RNNs) are in forefront of recent development and advances in \textit{deep learning} by making able neural networks to deal with sequences data, which is a major shortcoming in ANN. If the data is based on sequence of events in a video or text, the traditional neural network can't do reasoning for a single event based on its previous one. To tackle this issue RNNs have loops which enables them to persist the information.
 
-\begin{figure}[p]
+\begin{figure}
 	\centering
 	\includegraphics[scale=0.4]{./figs/rnn-rolled}
 	\caption[A Rolled Recurrent Neural Networks]{Recurrent Neural Networks (RNNs) uses loops.}
@@ -16,7 +16,7 @@ Recurrent Neural Networks (RNNs) are in forefront of recent development and adva
 
 As it shown in \textbf{Figure \ref{fig:rnn-rolled}}, a selected neural network, $A$ takes the input $x_t$ and outputs the value of $h_t$. this might not show how data goes from one step to the next one in a same network until you unroll the loop and see chain architecture of recurrent neural networks that makes them the best choice for sequential data, \textbf{Figure \ref{fig:rnn-unrolled}}.
 
-\begin{figure}[p]
+\begin{figure}
 	\centering
 	\includegraphics[scale=0.4]{./figs/rnn-unrolled}
 	\caption[An Unrolled Recurrent Neural Networks]{An Unrolled Recurrent Neural Networks (RNNs).}
