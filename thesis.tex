@@ -11,7 +11,7 @@
 \begin{document}
 
 % Required information
-\title{Uncertainty in Recurrent Neural Networks}
+\title{Weight Uncertainty in Recurrent Neural Networks Using Bayes by Backprop}
 \author{Alireza Samar}
 \degree{Master of Philosophy}
 \specialization{Machine Learning}
@@ -35,18 +35,18 @@
 %\superfive{Fifth SV}
 
 % Option for two-page printing
-\newgeometry{top=2.5cm,left=4cm,right=2.5cm,bottom=2.5cm,twoside}
+%\newgeometry{top=2.5cm,left=4cm,right=2.5cm,bottom=2.5cm}
 
 % Option to add watermark page
 % Comment for final version	
-\backgroundsetup{scale=1,angle=0,opacity=.1,hshift=0.25in,vshift=-0.5in,contents={\includegraphics[width=5cm]{figs/utm02.jpg}}}
+%\backgroundsetup{scale=1,angle=0,opacity=.1,hshift=0.25in,vshift=-0.5in,contents={\includegraphics[width=5cm]{figs/utm02.jpg}}}
 % \watermarkpage
 
 % Mandatory pages
 %\coverpage
 %\superpage
 %\certification
-%\frontmatter
+\frontmatter
 \maketitle
 %\declaration
 
@@ -63,7 +63,7 @@ Recurrent neural networks (RNN), and especially Deep RNNs have outperformed in v
 
 In traditional sciences fields such as physics and biology, analysis of model uncertainty is crucial. Nowadays, the control of critical systems is being handed to machine learning-based systems that could affect our day-to-day life directly, but the question is "what should these systems do with high uncertainty in output?" As a solution, by having model confidence, uncertain outputs can be treated as the special case by a human to make the decision.
 
-This work aims to propose a novel thechnique and develop tools to measure uncertainty estimates by adoption of Bayes by Backprop to the given network, especially in deep recurrent neural networks. The performance of proposed technique in this work will be extensively evaluated with widely studied benchmark.
+This work aims to propose a novel technique and develop tools to measure uncertainty estimates by adoption of Bayes by Backprop to the given network, especially in deep recurrent neural networks. The performance of proposed technique in this work will be extensively evaluated with widely studied benchmark.
 
 \end{abstract}
 
@@ -125,7 +125,6 @@ This work aims to propose a novel thechnique and develop tools to measure uncert
 \bibliography{reference}
 
 %\appendix
-%\chapter{Do not use long titles.}
 %\chapter{Pseudo-codes}
 %\chapter{Time-series Results}
 
